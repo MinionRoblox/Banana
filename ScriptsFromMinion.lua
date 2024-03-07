@@ -3,6 +3,19 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Scripts from Minion | Click For UGC", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
+local INFOTab= Window:MakeTab({
+    Name = "Info",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+  })
+  
+  INFOTab:AddButton({
+    Name = "Telegram Channel ",
+    Callback = function()
+         setclipboard("https://t.me/scripts_from_minion")
+      end    
+  })
+  
 local PlayerTab= Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://4483345998",
@@ -60,3 +73,5 @@ MiscTab:AddButton({
         
 end
 })
+
+OrionLib:Init()
