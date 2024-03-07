@@ -49,7 +49,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/TV83kUPv", true))()
 })
   
 MiscTab:AddButton({
-	Name = "Auto Buy Egg",
+	Name = "Auto Buy Egg (Need 15k Clicks)",
 	Callback = function()
         local args = {
             [1] = "Basic Egg",
